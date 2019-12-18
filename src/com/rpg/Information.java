@@ -29,6 +29,13 @@ public class Information {
         currDefence = player.def + armorStat;
     }
 
+    public void reset(){
+        enemy.hp = 20;
+        enemy.currlvl = 1;
+        enemy.att = 3;
+        enemy.def = 1;
+    }
+
 
     public void shopping(){
         statshop = 1;

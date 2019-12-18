@@ -55,7 +55,7 @@ public class BattleEvent extends Mission{
                         player.hp += 20;
                         if (player.hp > player.maxHp){
                             player.hp = player.hp - (player.hp - player.maxHp);
-                            System.out.println("HP player + " + (player.hp - player.maxHp));
+                            System.out.println("HP player Max!!! ");
                         }
                         else {
                             System.out.println("HP player + "+ 20);

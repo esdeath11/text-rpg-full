@@ -65,6 +65,7 @@ public class Event extends BattleEvent{
             if (answer == 1){
                 mission();
                 statusGain();
+                enemy.currlvl = 0;
             }
             if (answer == 2){
                 shopping();
