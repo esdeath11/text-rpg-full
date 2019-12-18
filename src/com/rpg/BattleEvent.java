@@ -48,17 +48,25 @@ public class BattleEvent extends Mission{
                 }
             }
             else if(answer == 2){
-                System.out.println(player.getName()+" : Use Potion");
-                if ((player.maxHp - player.hp) < 20){
-                    potion -= 1;
-                    player.hp += 20;
-                    System.out.println("HP player + "+ 20);
-                }
-                else if ((player.maxHp - player.hp) >20){
-                    player.hp += 30;
+                if (potion > 0){
+                    System.out.println(player.getName()+" : Use Potion");
+                    if (player.hp < player.maxHp){
+                        potion -= 1;
+                        player.hp += 20;
+                        if (player.hp > player.maxHp){
+                            player.hp = player.hp - (player.hp - player.maxHp);
+                            System.out.println("HP player + " + (player.hp - player.maxHp));
+                        }
+                        else {
+                            System.out.println("HP player + "+ 20);
+                        }
+                    }
+                    else {
+                        System.out.println("HP masih penuh!!!");
+                    }
                 }
                 else {
-                    System.out.println("HP masih penuh!!!");
+                    System.out.println("kamu tidak punya potion!!!");
                 }
             }
             else if(answer == 3){

@@ -29,6 +29,7 @@ public class Player extends Human{
         hp = getHealthPoint();
         exp = getExperience();
         totalExp += exp;
+        maxHp = hp;
         att = getAttack();
         def = getDefence();
         heal = getHealing();
@@ -41,7 +42,7 @@ public class Player extends Human{
             currlvl = currlvl + 1;
         }
         hp = hp + (10*currlvl);
-        maxHp = hp + (10*currlvl);
+        maxHp = maxHp + (10*currlvl);
         att += (3*currlvl);
         def += (1*currlvl);
         heal += (7*currlvl);
