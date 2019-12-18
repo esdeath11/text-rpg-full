@@ -10,7 +10,7 @@ public class Information {
     int dropGold;
 
 
-
+    boolean answerStatus;
     Scanner sc = new Scanner(System.in);
     Player player = new Player();
     Enemy enemy = new Enemy();
@@ -24,7 +24,10 @@ public class Information {
     int potion;
     int statshop;
 
-
+    public void statusGain(){
+        currAttack = player.att + weaponStat;
+        currDefence = player.def + armorStat;
+    }
 
 
     public void shopping(){

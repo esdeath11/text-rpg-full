@@ -10,9 +10,11 @@ public class Event extends BattleEvent{
         potion = 2;
         player.setExperience(100);
         player.setStatus();
-        currAttack = player.att + weaponStat;
+        statusGain();
         intro();
     }
+
+
 
 
     public void status(){
@@ -62,9 +64,11 @@ public class Event extends BattleEvent{
             answer = sc.nextInt();
             if (answer == 1){
                 mission();
+                statusGain();
             }
             if (answer == 2){
                 shopping();
+                statusGain();
             }
             if (answer == 3){
                 status();
@@ -73,6 +77,7 @@ public class Event extends BattleEvent{
     }
 
     public void mission(){
+        answerStatus = true;
         int a = 1;
         for (int i = 0; i < 4; i++) {
             System.out.println(a+" : "+ quest[i]);

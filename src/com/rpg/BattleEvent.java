@@ -3,7 +3,7 @@ package com.rpg;
 import java.util.Random;
 
 public class BattleEvent extends Mission{
-    boolean answerStatus = true;
+
     int enemyAtt;
     int chanceEsc;
     Random ran = new Random();
@@ -40,6 +40,7 @@ public class BattleEvent extends Mission{
                     gold = gold + dropGold;
                     System.out.println("<----[kamu mendapat "+dropGold+" Gold!!!]---->");
                     player.setStatus();
+                    answerStatus = false;
                     break;
                 }
                 else if (enemy.hp > 0){
@@ -54,7 +55,7 @@ public class BattleEvent extends Mission{
                     System.out.println("HP player + "+ 20);
                 }
                 else if ((player.maxHp - player.hp) >20){
-                    player.hp = player.maxHp;
+                    player.hp += 30;
                 }
                 else {
                     System.out.println("HP masih penuh!!!");
