@@ -3,12 +3,19 @@ package com.rpg;
 import java.util.Scanner;
 
 public class Information {
-    Enemy enemy = new Enemy();
+    int statidle;
+    int answer;
+    String musuh;
+    int dropExp;
+    int dropGold;
+
+
+
+    Scanner sc = new Scanner(System.in);
     Player player = new Player();
+    Enemy enemy = new Enemy();
     Weapon weapon = new Weapon();
     Armor armor = new Armor();
-    Scanner sc = new Scanner(System.in);
-    int answer;
     int currAttack;
     int currDefence;
     int weaponStat;
@@ -18,16 +25,7 @@ public class Information {
     int statshop;
 
 
-    public void status(){
-        System.out.println("<-------------------------[Status "+player.getName()+"]-------------------------->");
-        System.out.println("HP : "+player.hp+"\n" +
-                "Level : "+player.currlvl+"\n" +
-                "Exp : "+player.totalExp+"\n" +
-                "Gold : "+ gold+"\n" +
-                "Attack : "+player.att+" + "+weaponStat+"\n" +
-                "Defence : "+player.def+" + "+armorStat+"\n" +
-                "Potion : "+potion);
-    }
+
 
     public void shopping(){
         statshop = 1;

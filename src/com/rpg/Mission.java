@@ -2,14 +2,8 @@ package com.rpg;
 
 public class Mission extends Information{
 
-    Enemy enemy = new Enemy();
     private String enemyName[] = enemy.getEnemyName();
     private int enemyDropExp[] = enemy.getDropExp();
-    Player player = new Player();
-    String musuh;
-    int dropExp;
-    int dropGold;
-
 
     private String Quest[] = {"Operation Blue Thunder",
             "Operation Battle Axe",

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc346eb9-cda4-48e0-b959-c47f346b16a3" name="Default Changelist" comment="" />
+    <list default="true" id="bc346eb9-cda4-48e0-b959-c47f346b16a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rpg/BattleEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/BattleEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rpg/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rpg/Information.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/Information.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rpg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rpg/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/Mission.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +28,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1V4gJIQ9srWWpm8wMu1ySZx1zkv" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -132,10 +148,22 @@
       <workItem from="1576517712910" duration="14561000" />
       <workItem from="1576580468748" duration="8227000" />
       <workItem from="1576615017401" duration="14223000" />
+      <workItem from="1576698420631" duration="2225000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

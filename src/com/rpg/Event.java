@@ -3,23 +3,27 @@ package com.rpg;
 import java.util.Scanner;
 
 public class Event extends BattleEvent{
-    int statidle;
-    int statshop;
-    int answer;
-    int weaponStat;
-    int armorStat;
-    int currAttack;
-    int currDefence;
-    int potion;
     String quest[] = getQuest();
-    Scanner sc = new Scanner(System.in);
-    Player player = new Player();
-    Weapon weapon = new Weapon();
-    Armor armor = new Armor();
+
     public void starting(){
         gold = 300;
         potion = 2;
+        player.setExperience(100);
+        player.setStatus();
+        currAttack = player.att + weaponStat;
         intro();
+    }
+
+
+    public void status(){
+        System.out.println("<-------------------------[Status "+player.getName()+"]-------------------------->");
+        System.out.println("HP : "+player.hp+"\n" +
+                "Level : "+player.currlvl+"\n" +
+                "Exp : "+player.totalExp+"\n" +
+                "Gold : "+ gold+"\n" +
+                "Attack : "+player.att+" + "+weaponStat+"\n" +
+                "Defence : "+player.def+" + "+armorStat+"\n" +
+                "Potion : "+potion);
     }
 
     public void intro(){
@@ -72,6 +76,7 @@ public class Event extends BattleEvent{
         int a = 1;
         for (int i = 0; i < 4; i++) {
             System.out.println(a+" : "+ quest[i]);
+            a++;
         }
         answer = sc.nextInt();
         if (answer == 1){
@@ -83,11 +88,11 @@ public class Event extends BattleEvent{
             battle();
         }
         else if (answer == 3){
-            axe();
+            minerva();
             battle();
         }
         else if (answer == 4){
-            axe();
+            jack();
             battle();
         }
     }

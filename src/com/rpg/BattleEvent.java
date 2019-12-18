@@ -3,7 +3,6 @@ package com.rpg;
 import java.util.Random;
 
 public class BattleEvent extends Mission{
-    Enemy enemy = new Enemy();
     boolean answerStatus = true;
     int enemyAtt;
     int chanceEsc;
@@ -26,7 +25,7 @@ public class BattleEvent extends Mission{
             System.out.println("Exp Player= "+ player.totalExp);
             System.out.println();
             System.out.println("<"+musuh+" Sedang mendekat!>");
-            System.out.println("1. Serang"+"\n"+"2. Bertahan"+"\n"+"3. Healing"+"\n"+"4. istirahat"+"\n"+"5. kabur");
+            System.out.println("1. Serang"+"\n"+"2. Use Potion"+"\n"+"3. Escape");
             System.out.println("<---------------[Answer]--------------->");
             answer = sc.nextInt();
             if (answer == 1){
@@ -49,13 +48,16 @@ public class BattleEvent extends Mission{
             }
             else if(answer == 2){
                 System.out.println(player.getName()+" : Use Potion");
-                if (player.hp < player.maxHp){
+                if ((player.maxHp - player.hp) < 20){
                     potion -= 1;
                     player.hp += 20;
                     System.out.println("HP player + "+ 20);
                 }
-                else{
-                    System.out.println("HP mu masih penuh!!!");
+                else if ((player.maxHp - player.hp) >20){
+                    player.hp = player.maxHp;
+                }
+                else {
+                    System.out.println("HP masih penuh!!!");
                 }
             }
             else if(answer == 3){
