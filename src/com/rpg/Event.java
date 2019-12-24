@@ -11,6 +11,7 @@ public class Event extends BattleEvent{
         player.setExperience(100);
         player.setStatus();
         statusGain();
+        player.hp = player.maxHp;
         intro();
     }
 
@@ -19,11 +20,12 @@ public class Event extends BattleEvent{
 
     public void status(){
         System.out.println("<-------------------------[Status "+player.getName()+"]-------------------------->");
-        System.out.println("HP : "+player.hp+"\n" +
+        System.out.println("HP : "+player.hp+"/"+player.maxHp+ "\n"+
                 "Level : "+player.currlvl+"\n" +
                 "Exp : "+player.totalExp+"\n" +
                 "Gold : "+ gold+"\n" +
                 "Attack : "+player.att+" + "+weaponStat+"\n" +
+                "Min Attack : " + player.minAtt + "\n" +
                 "Defence : "+player.def+" + "+armorStat+"\n" +
                 "Potion : "+potion);
     }
@@ -52,7 +54,7 @@ public class Event extends BattleEvent{
     }
 
 
-
+    //ScreenShot
     public void idle(){
         statidle = 1;
         while (statidle == 1){
@@ -60,7 +62,9 @@ public class Event extends BattleEvent{
             System.out.println("Guild Reseptionis : apa yang ingin kamu lakukan? \n" +
                     "1. Mission \n" +
                     "2. Shop \n" +
-                    "3. Check Status");
+                    "3. Check Status \n" +
+                    "4. pergi ke penginapan \n" +
+                    "<---------------------[Answer]--------------------->");
             answer = sc.nextInt();
             if (answer == 1){
                 mission();
@@ -74,6 +78,31 @@ public class Event extends BattleEvent{
             if (answer == 3){
                 status();
             }
+            if (answer == 4){
+                if (gold >= 50){
+                    gold -= 50;
+                    System.out.println(player.getName()+": aku akan beristirahat di penginapan");
+                    System.out.println("<---[kamu membayar 50 gold]--->");
+                    player.hp = player.maxHp;
+                    System.out.println("[recover player hp to max]");
+                }
+                else{
+                    System.out.println("uang mu tidak cukup");
+                }
+            }
+            if (answer == 3210293){
+                System.out.println("<----------[Cheat Code]---------->");
+                String CheatCode = sc.nextLine();
+                if (CheatCode.equals(cheat)){
+                    gold = 999999;
+                    player.hp = 999999;
+                }
+                else{
+                    System.out.println("u r not a god");
+                    System.out.println("GAME OVER");
+                    System.exit(1);
+                }
+            }
         }
     }
 
@@ -84,6 +113,7 @@ public class Event extends BattleEvent{
             System.out.println(a+" : "+ quest[i]);
             a++;
         }
+        System.out.println("<---------------------[Answer]--------------------->");
         answer = sc.nextInt();
         if (answer == 1){
             blue();

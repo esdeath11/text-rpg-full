@@ -23,18 +23,13 @@ public class Information {
     int gold;
     int potion;
     int statshop;
+    String cheat = "imthebestintheworld";
 
     public void statusGain(){
         currAttack = player.att + weaponStat;
         currDefence = player.def + armorStat;
     }
 
-    public void reset(){
-        enemy.hp = 20;
-        enemy.currlvl = 1;
-        enemy.att = 3;
-        enemy.def = 1;
-    }
 
 
     public void shopping(){
@@ -62,6 +57,7 @@ public class Information {
                     System.out.println("kamu membeli "+weapon.name[0]);
                     currAttack = player.att + weapon.attack[0];
                     weaponStat = weapon.attack[0];
+                    player.minAtt += 3;
                 }
                 else if (answer == 2 && gold >= weapon.cost[1]){
                     gold -= weapon.cost[1];
@@ -113,6 +109,7 @@ public class Information {
             }
             else if (answer == 3 && gold >= 100){
                 gold -= 100;
+                potion += 1;
             }
             else if (answer == 4){
                 statshop = 0;

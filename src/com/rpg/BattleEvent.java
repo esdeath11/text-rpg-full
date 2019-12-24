@@ -28,8 +28,9 @@ public class BattleEvent extends Mission{
             System.out.println("1. Serang"+"\n"+"2. Use Potion"+"\n"+"3. Escape");
             System.out.println("<---------------[Answer]--------------->");
             answer = sc.nextInt();
-            if (answer == 1){
+            if (answer == 1){ //ScreenShot
                 System.out.println("<-------["+player.getName()+" Menyerang]------->");
+                currAttack = ran.nextInt(currAttack) + player.minAtt; // sudah memakai random
                 enemy.hp = enemy.hp - currAttack;
                 System.out.println("Kamu Menyerang "+musuh);
                 System.out.println(musuh+" menerima "+currAttack+" Damage!!");
@@ -64,6 +65,7 @@ public class BattleEvent extends Mission{
                     else {
                         System.out.println("HP masih penuh!!!");
                     }
+                    enemyAttack();
                 }
                 else {
                     System.out.println("kamu tidak punya potion!!!");
@@ -84,9 +86,11 @@ public class BattleEvent extends Mission{
         }
     }
 
+    //Screen Shot
     public void enemyAttack(){
         System.out.println("<-------["+musuh+" Menyerang]------->");
-        player.hp = (player.hp + currDefence) - enemyAtt ;
+        enemyAtt = ran.nextInt(enemyAtt) + enemy.minAtt;
+        player.hp = (player.hp + currDefence) - enemyAtt ; // sudah memakai random
         System.out.println("kamu terkena "+(enemyAtt - currDefence)+" DAMAGE!!!");
         if (player.hp  < 1){
             System.out.println("GAME OVER");

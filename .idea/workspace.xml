@@ -4,9 +4,18 @@
     <list default="true" id="bc346eb9-cda4-48e0-b959-c47f346b16a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/BattleEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/BattleEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/Event.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/Information.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/Information.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testing/com/rpg/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testing/com/rpg/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/rpg/BattleEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/BattleEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rpg/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rpg/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/rpg/Information.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/Information.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rpg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rpg/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rpg/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.rar" beforeDir="false" afterPath="$PROJECT_DIR$/testing.rar" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +151,14 @@
       <workItem from="1576517712910" duration="14561000" />
       <workItem from="1576580468748" duration="8227000" />
       <workItem from="1576615017401" duration="14223000" />
-      <workItem from="1576698420631" duration="6618000" />
+      <workItem from="1576698420631" duration="8299000" />
+      <workItem from="1576885849485" duration="743000" />
+      <workItem from="1576986839419" duration="663000" />
+      <workItem from="1576997285526" duration="1291000" />
+      <workItem from="1577013137451" duration="819000" />
+      <workItem from="1577041308492" duration="1058000" />
+      <workItem from="1577118258639" duration="2224000" />
+      <workItem from="1577145041021" duration="1958000" />
     </task>
     <servers />
   </component>
@@ -154,7 +170,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

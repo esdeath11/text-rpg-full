@@ -9,6 +9,7 @@ public class Player extends Human{
     int def;
     int exp;
     int currlvl;
+    int minAtt;
     @Override
     public void setName(String name) {
         super.setName(name);
@@ -26,26 +27,27 @@ public class Player extends Human{
 
     @Override
     public void setStatus() {
-        hp = getHealthPoint();
         exp = getExperience();
         totalExp += exp;
-        maxHp = hp;
+        maxHp = getHealthPoint();
         att = getAttack();
         def = getDefence();
         heal = getHealing();
         gainLevel();
     }
 
-    void gainLevel(){
+    //screenshot
+    void gainLevel(){  //hp tidak full ketika naik level dan pemberian min attack
         while (totalExp > 99){
             totalExp -= 100;
             currlvl = currlvl + 1;
         }
-        hp = hp + (10*currlvl);
+
         maxHp = maxHp + (10*currlvl);
         att += (3*currlvl);
         def += (1*currlvl);
         heal += (7*currlvl);
+        minAtt += ((1*currlvl) + 2);
     }
 
 }

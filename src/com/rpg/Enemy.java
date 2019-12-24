@@ -9,6 +9,7 @@ public class Enemy extends Human{
     int def;
     int exp;
     int currlvl;
+    int minAtt;
 
     private String enemyName[] = {"Soldier", "Heliodora", "Aikaterine", "Protesilaus", "Scamandrius", "Eutychides"};
     private int dropExp[] = {70, 150, 250, 300, 400, 1000};
@@ -38,7 +39,7 @@ public class Enemy extends Human{
         gainLevel();
     }
 
-    void gainLevel(){
+    void gainLevel(){ //pemberian minAttack
         while (totalExp > 99){
             totalExp -= 100;
             currlvl = currlvl + 1;
@@ -47,5 +48,6 @@ public class Enemy extends Human{
         att += (3*currlvl);
         def += (1*currlvl);
         heal += (7*currlvl);
+        minAtt += ((1*currlvl) + 2);
     }
 }
